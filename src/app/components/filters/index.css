@@ -1,0 +1,28 @@
+.filters{
+    margin-top: 10px;
+}
+.filters-list{
+    gap: 0 5px;
+    display: flex;
+    padding: 4px;
+    border-radius: 8px;
+    width: fit-content;
+    border: 1px solid #c7cdd2;
+}
+.filters-list li label{
+    color: #000;
+    display: block;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+.filters-list li label:hover{
+    color: #0041CB;
+    background: #CDDDFF;
+}
+.filters-list li input:checked+label {
+    color: #0041CB;
+    background: #CDDDFF;
+}

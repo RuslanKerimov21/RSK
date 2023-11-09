@@ -1,0 +1,29 @@
+{
+    "navlist": [
+        {
+            "slug": "Навигация",
+            "sluglists": [
+                {
+                    "path": "/",
+                    "title": "Главная",
+                    "list": []
+                },
+                {
+                    "path": "procedure",
+                    "title": "Закупки",
+                    "list": []
+                },
+                {
+                    "path": "document",
+                    "title": "Документы",
+                    "list": []
+                },
+                {
+                    "path": "career",
+                    "title": "Вакансии",
+                    "list": []
+                }
+            ]
+        }
+    ]
+}

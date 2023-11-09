@@ -1,0 +1,152 @@
+.lots{
+    margin-top: 20px;
+}
+.lot-list{
+    gap: 10px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.lot-item{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    background: #fff;
+    padding: 24px 24px 24px 34px;
+    justify-content: space-between;
+    transition: all 0.2s ease-out 0s;
+    box-shadow: 0 4px 24px rgba(6,88,148,0.15);
+}
+.lot-content_left{
+    gap: 13px;
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+}
+.lot-header{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.lot-section{
+    font-size: 15px;
+    color: #c7cdd2;
+}
+.lost-status{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #e4e8ec;
+}
+.lost-status.acceptance_applications{
+    background: #84bd5a;
+}
+.lot-contragent{
+    font-size: 15px;
+    color: #c7cdd2;
+}
+.procedure-name{
+    width: 100%;
+}
+.procedure-name a{
+    width: 100%;
+    color: #0041CB;
+    transition: all 0.2s ease;
+    transition: border 0.1s ease-in-out;
+}
+.procedure-name a:hover{
+    text-decoration: underline;
+}
+.procedure-organisator{
+    font-size: 12px;
+    font-family: 'Circle-Bold';
+    text-transform: uppercase;
+}
+.tag-list{
+    gap: 4px;
+    display: flex;
+    align-items: center;
+}
+.tag-item{
+    padding: 3px 6px;
+    border-radius: 4px;
+    transition: all 0.2s;
+    background-color: #F1F8FF;
+}
+.tag-item.active{
+    background: #CDDDFF;
+}
+.tag-item.active a{
+    color: #0041CB;
+}
+.tag-itemt li:hover{
+    background: #CDDDFF;
+}
+.tag-item:hover a{
+    color: #0041CB;
+}
+.tag-item a{
+    font-size: 12px;
+}
+.lot-content_right{
+    width: 23%;
+    gap: 13px;
+    display: flex;
+    flex-direction: column;
+}
+.method-conducting{
+    font-size: 14px;
+    line-height: 18px;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.price p{
+    display: flex;
+    font-size: 24px;
+    align-items: end;
+    line-height: 32px;
+}
+.price p sub{
+    font-size: 12px;
+    line-height: 25px;
+}
+.price span{
+    font-size: 21px;
+    font-weight: 400;
+    margin-left: 4px;
+}
+.region{
+    gap: 0 5px;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    align-items: center;
+}
+.region svg{
+    font-size: 17px;
+    color: #00000067;
+}
+.procedure-block_lot-infoblock{
+    gap: 5px;
+    display: flex;
+}
+@media(max-width: 800px){
+    .lot-item{
+        gap: 10px 0;
+        padding: 15px;
+    }
+    .lot-content_left{
+        gap: 10px 0;
+        width: 100%;
+    }
+    .lot-content_right{
+        gap: 10px 0;
+        width: 100%;
+    }
+    .price p{
+        font-size: 20px;
+    }
+}

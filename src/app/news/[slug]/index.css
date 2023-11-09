@@ -1,0 +1,26 @@
+.news-container{
+    margin-top: 20px;
+}
+.news-page{
+    margin-top: 8px;
+}
+.news-title {
+    font-size: 24px;
+    font-family: 'Circle-Bold';
+}
+.news-image{
+    height: 300px;
+    margin-top: 8px;
+}
+.news-page img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.news-content{
+    margin-top: 20px;
+}
+.news-content p{
+   line-height: 150%;
+   margin-bottom: 4px;
+}

@@ -1,0 +1,113 @@
+.footer .logo{
+    width: 58px;
+}
+.footer-inner{
+    padding: 10px 0;
+    border-top: 1px solid #E6E6E6;
+}
+.footer-inner .container{
+    gap: 20px;
+    display: flex;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-inner:first-child .container{
+    align-items: center;
+}
+.footer-navigation_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list_items{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-list_information{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-list_information li a{
+    font-size: 14px;
+    color: #404040;
+    white-space: nowrap;
+    font-family: 'AdobeClean-Regular';
+}
+.footer-list_title{
+    font-size: 17px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'AdobeClean-Regular';
+}
+.footer-list_items li{
+    gap: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+.footer-list_items li a{
+    color: #404040;
+    font-family: 'AdobeClean-Regular';
+}
+.footer-intro{
+    gap: 34px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-intro a{
+    gap: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.intro-link_icon{
+    width: 46px;
+    height: 46px;
+    display: flex;
+    color: #0450F2;
+    border-radius: 8px;
+    align-items: center;
+    background: #dbe7ff;
+    justify-content: center;
+}
+.intro-link_icon svg{
+    font-size: 15px;
+}
+.intro-footer span{
+    font-size: 15px;
+}
+.intro-footer p{
+    font-size: 15px;
+    color: #8D93A1;
+}
+.footer-requisites{
+    font-size: 15px;
+    display: flex;
+    color: #8D93A1;
+    max-width: 300px;
+    line-height: 34px;
+    flex-direction: column;
+}
+.copy{
+    font-size: 15px;
+    color: #8D93A1;
+}
+@media(max-width: 800px){
+    .footer-inner{
+        gap: 20px 0;
+        padding: 20px 0;
+        align-items: start;
+    }
+    .footer-inner,
+    .footer-navigation_wrap,
+    .footer-list_items{
+        flex-wrap: wrap;
+    }
+    .footer-navigation_wrap{
+        gap: 20px 0;
+    }
+    .footer-intro{
+        width: 100%;
+        justify-content: space-between;
+    }
+}

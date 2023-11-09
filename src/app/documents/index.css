@@ -1,0 +1,114 @@
+.page-wrap{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.navigation-page{
+    width: 21%;
+}
+.navigation-header{
+    padding-bottom: 10px;
+    font-family: 'AdobeClean-Bold';
+    border-bottom: 1px solid #7a8ca224;
+}
+.navigation-page_list{
+    padding: 10px 0;
+}
+.navigation-page_list li a{
+    padding: 5px 10px;
+    transition: all 0.2s ease;
+}
+.navigation-page_list li a:hover{
+    color: #1F66FF;
+}
+.navigation-page_list li.active a{
+    color: #1F66FF;
+}
+.documents-table{
+    width: 76%;
+}
+.table-wrap{
+    width: 100%;
+}
+.documents-table_header{
+    display: flex;
+    margin-bottom: 1px;
+    align-items: center;
+    background: #f3f3f3;
+}
+.table-header_row{
+    font-size: 14px;
+    padding: 10px 40px;
+}
+.table-header_row:first-child{
+    width: 65%;
+}
+.table-header_row:last-child{
+    width: 30%;
+}
+.document-date{
+    font-size: 12px;
+}
+.documents-list li{
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid #7a8ca224;
+}
+.documents-list li:hover .row-info a {
+    color: #0f58ac;
+    text-decoration: underline;
+}
+.document-content_row{
+    gap: 0 10px;
+    display: flex;
+    padding: 15px 40px;
+    align-items: center;
+}
+.documents-list li svg{
+    color: #00000011;
+    transition: all 0.2s ease;
+}
+.documents-list li:hover svg {
+    color: #0f58ac;
+}
+.document-detail_file{
+    width: 195px;
+    text-align: left;
+}
+.document-detail_file a{
+    display: flex;
+    align-items: center;
+}
+.docement-detail_mail{
+    width: 125px;
+}
+.document-detail_file-icon{
+    margin-right: 20px;
+}
+.document-content_row:last-child{
+    width: 30%;
+}
+.document-content_row:first-child{
+    width: 65%;
+}
+.docement-detail_mail, .document-detail_file-icon{
+    font-size: 0;
+}
+@media(max-width: 1000px){
+    .page-wrap{
+        flex-direction: column;
+    }
+    .documents-table {
+        width: 100%;
+    }
+    .navigation-page_list{
+        display: flex;
+    }
+    .table-header_row:first-child{
+        width: 100%;
+    }
+    .document-content_row, .table-header_row{
+        padding: 15px;
+    }
+}

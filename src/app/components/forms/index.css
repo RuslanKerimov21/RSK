@@ -1,0 +1,126 @@
+.form-group_title{
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: 'AdobeClean-Bold';
+}
+.form-group_controls{
+    width: 100%;
+    gap: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.form-group_controls-field{
+    gap: 10px;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+.form-group_row{
+    gap: 20px;
+    width: 100%;
+    display: flex;
+}
+.jobs-input{
+    width: 49%;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid #00000041;
+}
+.levels{
+    gap: 10px 0;
+    width: 200px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.levels .jobs-input{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+    align-items: center;
+    text-overflow: ellipsis;
+    justify-content: space-between;
+}
+.level-list{
+    top: 109%;
+    width: 100%;
+    padding: 8px 0;
+    overflow: auto;
+    max-height: 206px;
+    border-radius: 5px;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,.16);
+}
+.level-list li{
+    cursor: pointer;
+    font-size: 14px;
+    overflow: hidden;
+    line-height: 22px;
+    padding: 8px 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: all 0.2s ease;
+}
+.level-list li:hover{
+    background: #f7f7f7;
+}
+.levels .jobs-input svg{
+    transition: all 0.2s ease;
+    color: #00000044;
+}
+.levels .jobs-input.open svg{
+    transform: translate(0, 0) rotate(180deg);
+}
+.file-reader{
+    gap: 10px;
+    display: flex;
+    font-size: 14px;
+    cursor: pointer;
+    color: #1F66FF;
+    align-items: center;
+}
+.file-reader svg{
+    font-size: 18px;
+}
+.form-group_controls label{
+    font-size: 15px;
+}
+.button-works{
+    width: fit-content;
+}
+.form-group_controls-field{
+    display: flex;
+}
+.politics, .approval{
+    gap: 5px;
+    display: flex;
+}
+.form-group_controls-field a,
+.form-group_controls-field label{
+    font-size: 14px;
+}
+.form-group_controls-field a{
+    color: #1F66FF;
+}
+.row-footer_text{
+    font-size: 15px;
+    color: #00000062;
+}
+.form-jobs .footer{
+    margin-top: 20px;
+}
+.row-footer_text{
+    margin-top: 10px;
+}
+@media (max-width: 800px){
+    .form-group_row {
+        flex-direction: column;
+    }
+    .jobs-input, .levels{
+        width: 100%;
+    }
+}

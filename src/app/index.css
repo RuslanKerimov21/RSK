@@ -1,0 +1,365 @@
+@import url('./globals.css');
+@font-face {
+  font-family: 'Circle-Bold';
+  src: url(./datalayer/fonts/Circle/Circe-Bold.woff);
+}
+@font-face {
+  font-family: 'Circle-Extra-Bold';
+  src: url(./datalayer/fonts/Circle/Circe-ExtraBold.woff);
+}
+@font-face {
+  font-family: 'Circle-Regular';
+  src: url(./datalayer/fonts/Circle/Circe-Regular.woff);
+}
+@font-face {
+  font-family: 'Circle-Light';
+  src: url(./datalayer/fonts/Circle/Circe-Light.woff);
+}
+@font-face {
+  font-family: 'AdobeClean-Bold';
+  src: url(./datalayer/fonts/Adobe/AdobeClean-Bold.woff);
+}
+@font-face {
+  font-family: 'AdobeClean-BoldSemiCn';
+  src: url(./datalayer/fonts/Adobe/AdobeClean-BoldSemiCn.woff);
+}
+@font-face {
+  font-family: 'AdobeClean-Regular';
+  src: url(./datalayer/fonts/Adobe/AdobeClean-Regular.woff);
+}
+a,
+button,
+h1,
+h2,
+h3,
+p,
+span,
+input {
+  font-family: 'AdobeClean-Regular';
+}
+.logo img {
+  width: 100%;
+  object-fit: cover;
+}
+.container {
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 1550px;
+}
+.container-sx {
+  max-width: 1700px;
+}
+.button {
+  color: #fff;
+  display: flex;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: fit-content;
+  padding: 10px 20px;
+  align-items: center;
+  background: #1F66FF;
+  justify-content: center;
+  transition: all 0.2s linear;
+  box-shadow: 0px 4px 16px 1px rgba(0, 65, 203, 0.07);
+}
+.overlay{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  position: fixed;
+  transition: opacity 300ms;
+  background: rgba(0, 0, 0, 0.7);
+}
+.play{
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  color: #fff;
+  background: red;
+  align-items: center;
+  border-radius: 100%;
+  justify-content: center;
+}
+.input {
+  width: 100%;
+  padding: 0 41px;
+  border-radius: 4px;
+  background: #FFF;
+  border: 1px solid rgba(166, 180, 193, 0.50);
+}
+.section-title {
+  font-size: 20px;
+  color: #404040;
+  margin-bottom: 30px;
+}
+.page-title {
+  margin: 10px 0;
+  font-size: 26px;
+  color: #404040;
+}
+.page-banner {
+  display: flex;
+  padding: 70px 0;
+  min-height: 349px;
+  position: relative;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  background-position: 0 16%;
+  background-repeat: no-repeat;
+}
+.page-banner::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background: #000;
+  position: absolute;
+}
+.jobs-banner .container{
+  gap: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.page-banner .container,
+.page-banner .banner-info {
+  z-index: 1;
+}
+.banner-info p{
+  max-width: 583px;
+  line-height: 170%;
+}
+.page-banner .banner-info  .container {
+  gap: 20px 0;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+}
+.page-banner .banner-title {
+  color: #fff;
+  font-size: 26px;
+}
+.page-banner .banner-info .button, .page-banner .button {
+  width: fit-content;
+}
+.page-banner svg{
+  font-size: 16px;
+  margin-left: 10px;
+}
+.offer-img {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+.offer-info {
+  z-index: 1;
+  padding-left: 120px;
+  position: absolute;
+}
+.offer-info h1 {
+  font-size: 25px;
+}
+.lists {
+  margin-top: 30px;
+}
+.news {
+  margin: 30px 0;
+}
+.news-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.news-head .section-title {
+  margin-bottom: 0;
+}
+.news-head a {
+  gap: 10px;
+  display: flex;
+  color: #2755AD;
+  align-items: center;
+}
+.news-head a img {
+  width: 15px;
+}
+.news-list {
+  gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.news-item {
+  width: 31%;
+}
+.news-item a {
+  width: 100%;
+  gap: 16px 0;
+  display: flex;
+  flex-direction: column;
+}
+.news-date {
+  font-size: 18px;
+  color: #4C535F;
+}
+.news-description {
+  font-size: 18px;
+}
+.about-us_history {
+  padding: 70px 0;
+  background: #2755AD;
+}
+.history-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.history-item {
+  gap: 0 16px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.history-count {
+  font-size: 32px;
+  font-family: 'AdobeClean-Bold';
+}
+.history-text {
+  font-size: 18px;
+  line-height: 30px;
+}
+.investors {
+  margin: 30px 0;
+}
+.investors-items {
+  display: flex;
+  overflow: auto;
+}
+.investors-item {
+  width: 34%;
+  display: flex;
+  padding: 30px 20px;
+  white-space: nowrap;
+  flex-direction: column;
+  background: #bdbdbd1c;
+  border-right: 1px solid #7a8ca224;
+}
+.investors-item:last-child {
+  border-right: none;
+}
+.investors-title {
+  font-size: 18px;
+  white-space: break-spaces;
+  text-transform: uppercase;
+}
+.investors-list {
+  gap: 20px 0;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+}
+.investors-list li {
+  line-height: 30px;
+  white-space: break-spaces;
+}
+.indicator-value_box {
+  gap: 0 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.indicator-value {
+  font-size: 30px;
+  line-height: 48px;
+  color: #7a8ca2;
+  font-family: 'AdobeClean-BoldSemiCn';
+}
+.ant-breadcrumb ol li{
+  display: flex;
+  align-items: center;
+}
+.ant-breadcrumb-link a{
+  font-family: 15px;
+}
+@media(max-width: 1020px) {
+  .news-item {
+    width: 46%;
+  }
+  .history-list {
+    gap: 20px 0;
+  }
+  .history-item {
+    width: 100%;
+  }
+  .history-count {
+    font-size: 27px;
+  }
+  .investors-items {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .investors-list {
+    gap: 0;
+    margin-top: 10px;
+  }
+  .investors-item {
+    border: none;
+    flex: 0 0 59%;
+    width: fit-content;
+    margin-right: 10px;
+  }
+  .investors-item:last-child {
+    margin-right: 0;
+  }
+}
+@media(max-width: 800px) {
+  .about-us_history {
+    padding: 30px 0;
+  }
+  .page-banner{
+    padding: 30px 0;
+  }
+  .page-title {
+    font-size: 24px;
+  }
+  .offer-info {
+    padding: 0;
+  }
+  .offer-info h1 {
+    font-size: 20px;
+  }
+  .offer .swiper {
+    height: 300px;
+  }
+  .news-list {
+    gap: 40px 0;
+  }
+  .news-item {
+    width: 49%;
+  }
+  .investors-title {
+    font-size: 15px;
+  }
+  .indicator-value {
+    font-size: 22px;
+  }
+  .page-banner .banner-title{
+    font-size: 20px;
+  }
+  .banner-info p{
+    font-size: 14px;
+  }
+}
+@media(max-width: 620px) {
+  .news-item {
+    width: 100%;
+  }
+}

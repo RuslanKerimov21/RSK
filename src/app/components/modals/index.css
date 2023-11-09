@@ -1,0 +1,28 @@
+.yotube{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.yotube .close{
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    color: #fff;
+    position: absolute;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+.close svg{
+    font-size: 18px;
+}
+.video-frame{
+    width: 699px;
+}
+@media(max-width: 800px){
+    .video-frame{
+        width: 95%;
+    }
+}

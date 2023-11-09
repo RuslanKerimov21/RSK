@@ -1,0 +1,95 @@
+.search-query_params {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.query-options {
+    width: 24%;
+    font-size: 14px;
+    position: relative;
+}
+.query-options .text-box {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid #0000005d;
+}
+.query-options .text-box svg {
+    font-size: 15px;
+}
+.query-options .text-box span {
+    width: 100%;
+}
+.select-options {
+    top: 100%;
+    z-index: 1;
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(6, 88, 148, 0.15);
+}
+.query-options.open span,
+.query-options.open .text-box,
+.query-options.open .text-box svg{
+    color: #1F66FF;
+}
+.query-options.open .select{
+    border: 1px solid #1F66FF;
+}
+.query-options.open .select-options{
+    opacity: 1;
+    pointer-events: all;
+}
+.select-options{
+    opacity: 0;
+    pointer-events: none;
+}
+.select-options li{
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+.select-options li label{
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+}
+.select-options li label:hover{
+    background: #e3f3ff;
+}
+.select-options li input{
+    order: 1;
+    right: 8px;
+    position: absolute;
+}
+.select-options li input:checked+label{
+    background: #e3f3ff;
+}
+.query-options .label{
+    margin-bottom: 5px;
+    color: #00000056;
+    display: inline-block;
+}
+@media(max-width: 800px) {
+    .query-options {
+        width: 49%;
+    }
+}
+@media(max-width: 600px){
+    .search-query_params{
+        gap: 10px 0;
+    }
+    .query-options {
+        width: 100%;
+    }
+}

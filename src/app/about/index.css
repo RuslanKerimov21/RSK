@@ -1,0 +1,142 @@
+.about-services {
+    padding: 20px 0;
+}
+.about-services_list {
+    gap: 30px;
+    display: flex;
+    overflow: auto;
+}
+.about-services_list::-webkit-scrollbar {
+    width: 0;
+ }
+.about-services_list li {
+    gap: 10px;
+    width: 13%;
+    flex: 0 0 14%;
+    height: 278px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    white-space: nowrap;
+    flex-direction: column;
+}
+.about-services_list li .image {
+    height: 100%;
+    background: #000;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+}
+.about-services_list li .information {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    white-space: break-spaces;
+    color: rgb(255, 255, 255);
+    font-family: 'AdobeClean-Bold';
+}
+.sertificats{
+    margin-top: 50px;
+}
+.sertificats-list li {
+    gap: 20px;
+    display: flex;
+}
+.about-accordion{
+    display: none;
+}
+.sertificat-info {
+    font-size: 15px;
+    max-width: 293px;
+    line-height: 150%;
+    color: #1e2731;
+}
+.slider-about{
+    gap: 50px;
+    display: flex;
+    height: 500px;
+}
+.slider-left{
+    width: 600px;
+    background: #000;
+    height: 100% !important;
+}
+.slider-right{
+    width: 100%;
+    margin-left: 0 !important;
+}
+.slide-info{
+    gap: 20px 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+.slide-title{
+    font-size: 24px;
+    font-family: 'AdobeClean-Bold';
+}
+.slde-info_items{
+    gap: 47px;
+    display: flex;
+}
+.slide-info_list{
+    gap: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.slide-info_list li{
+    font-size: 16px;
+    line-height: 150%;
+    list-style: inside;
+}
+.section-title.about{
+    font-size: 25px;
+}
+.about-accordion_list{
+    gap: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+.about-accordion_item{
+    padding: 20px;
+    cursor: pointer;
+    border-radius: .5rem;
+    box-shadow: rgba(33, 33, 52, 0.1) 0px 1px 4px;
+}
+.about-accordion_title{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'AdobeClean-Bold';
+}
+.about-accordion_content{
+    margin-top: 10px;
+}
+.abbout-accordion_content-list{
+    gap: 15px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+@media(max-width: 1110px) {
+    .about-services_list li{
+        flex: 0 0 200px;
+    }
+}
+@media(max-width: 800px){
+    .slider-about{
+        display: none;
+    }
+    .about-accordion{
+        display: block;
+    }
+    .section-title.about{
+        font-size: 20px;
+    }
+}
