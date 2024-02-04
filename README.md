@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Задачи проекта
+1. Верстка проекта по макету figma template
+2. Релизаци роутинга на next.js
+3. Реализация функции отправки почтовых писем с форм
+4. Подключение системы управления сайтов
+5. Сдача проекта
+6. Доработка проекта после сдачи
+## Использованные технологии 
+1. Отправка почтовых писем с форм, была реализована с помощью nodemailer.
+2. Для системы управления сайтов использовалась api strapi headless cms.
+3. Весь бекенд использовавшийся в проекте был использован с помощью node.js на основе strapi.
 
 ## Getting Started
 
